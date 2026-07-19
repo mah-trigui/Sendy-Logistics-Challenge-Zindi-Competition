@@ -9,8 +9,6 @@ Ranked in the TOP 25%
 Predicting delivery duration (pickup to arrival) for a logistics platform in Nairobi, Kenya.
 Zindi ML Competition — Regression on tabular data.
 
-![Hybrid Analytical-ML Modeling](assets/cover.png)
-
 ---
 
 ## The Core Idea
