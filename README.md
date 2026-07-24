@@ -33,16 +33,16 @@ This turns domain knowledge into a structured prior rather than treating it as a
 
 ```r
 # Average of haversine and straight-line distance
-df$dis <- ((df$dist / 1000) + df$Distance__KM_) / 2
+df$distance <- ((df$distance / 1000) + df$Distance__KM_) / 2
 
 # Baseline estimate from rider's historical speed
-df$dur_estim <- df$dis / df$speed_med * 60 * 60
+df$duree_estimee <- df$distance / df$speed_median * 60 * 60
 
 # Normalized duration combining pickup behavior + estimate
-df$dur_nor <- df$arriv_pick_med + df$dur_estim
+df$duree_normalise <- df$arriv_pick_median + df$duree_estimee
 
 # Improvement ratio: how much context deviates from expectation
-df$imp <- df$dur_nor / df$arriv_pick
+df$improvement <- df$duree_normalise / df$arriv_pick
 ```
 
 ### 2. Rider profiling from historical behavior
